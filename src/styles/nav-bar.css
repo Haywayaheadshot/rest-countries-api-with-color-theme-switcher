@@ -1,0 +1,23 @@
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 1px solid hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 3px 0 hsl(0, 0%, 52%);
+}
+
+.night .nav-bar-container {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.nav-bar-container h3 {
+  font-size: 16px;
+  padding: 3vh 4vw;
+}
+
+.night .nav-bar-container h3 {
+  color: hsl(0, 0%, 100%);
+}
