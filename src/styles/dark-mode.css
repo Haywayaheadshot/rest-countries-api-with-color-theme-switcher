@@ -1,0 +1,33 @@
+.half-moon-img {
+  width: 20px;
+}
+
+.half-moon-btn {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* height: fit-content; */
+}
+
+.dark-mode-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5vh 4vw;
+}
+
+.dark-mode-container h2 {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.night .dark-mode-container h2 {
+  color: hsl(0, 0%, 100%);
+}
