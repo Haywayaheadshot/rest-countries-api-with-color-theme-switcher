@@ -25,3 +25,16 @@ code {
     'Courier New',
     monospace;
 }
+
+.day {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.night {
+  background-color: hsl(207, 26%, 17%);
+}
+
+.font {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+}
