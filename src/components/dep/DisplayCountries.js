@@ -32,33 +32,37 @@ function DisplayCountries() {
 
   return (
     <div className="display-countries-container">
-      <section className="input-container">
-        <img className="magnifier-img" src={magnifier} alt="magnifier" />
-        <input type="text" className="search-input" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
+      <section className="inputs-container">
+        <div className="country-input-container">
+          <img className="magnifier-img" src={magnifier} alt="magnifier" />
+          <input type="text" className="search-input" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
+        </div>
+        <input placeholder="Find by Region.." onChange={(e) => setFilterRegion(e.target.value)} className="select-pop" />
       </section>
-      <input placeholder="Find by Region.." onChange={(e) => setFilterRegion(e.target.value)} className="select-pop" />
-      {mappedCountries.map((country) => (
-        <NavLink to={`/${country.name.official}`} key={country.name.official}>
-          <section className="countries-section" key={country.name.official}>
-            <img className="country-flag-png" src={country.flags.png} alt={`Flag of ${country.name.official}`} />
-            <div className="section-mobile-info">
-              <h1>{country.name.official}</h1>
-              <h4>
-                Population:
-                <span className="section-mobile-info-data">{country.population}</span>
-              </h4>
-              <h4>
-                Region:
-                <span className="section-mobile-info-data">{country.region}</span>
-              </h4>
-              <h4>
-                Capital:
-                <span className="section-mobile-info-data">{country.capital}</span>
-              </h4>
-            </div>
-          </section>
-        </NavLink>
-      ))}
+      <section className="displayed-countries">
+        {mappedCountries.map((country) => (
+          <NavLink to={`/${country.name.official}`} key={country.name.official}>
+            <section className="countries-section" key={country.name.official}>
+              <img className="country-flag-png" src={country.flags.png} alt={`Flag of ${country.name.official}`} />
+              <div className="section-mobile-info">
+                <h1>{country.name.official}</h1>
+                <h4>
+                  Population:
+                  <span className="section-mobile-info-data">{country.population}</span>
+                </h4>
+                <h4>
+                  Region:
+                  <span className="section-mobile-info-data">{country.region}</span>
+                </h4>
+                <h4>
+                  Capital:
+                  <span className="section-mobile-info-data">{country.capital}</span>
+                </h4>
+              </div>
+            </section>
+          </NavLink>
+        ))}
+      </section>
     </div>
   );
 }

@@ -2,3 +2,23 @@
   padding-left: 5px;
   color: hsl(0, 0%, 52%);
 }
+
+@media (min-width: 745px) {
+  .details-container {
+    display: grid;
+    gap: 50px;
+  }
+
+  .country-detail-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    padding: 20px 50px;
+  }
+
+  .svg-flag {
+    max-width: 80%;
+    place-self: center;
+    border: 1px solid #000;
+  }
+}
