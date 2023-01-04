@@ -38,3 +38,21 @@ code {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
 }
+
+.for-desk {
+  display: none;
+}
+
+.for-mobile {
+  display: block;
+}
+
+@media (min-width: 745px) {
+  .for-desk {
+    display: block;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+}
