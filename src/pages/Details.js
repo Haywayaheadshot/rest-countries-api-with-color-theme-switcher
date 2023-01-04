@@ -9,13 +9,14 @@ function Details() {
   const filteredCountry = countries.filter((country) => (country.name.official === params.id));
 
   return (
-    <div>
+    <div className="details-container">
       <NavLink to="/">
         <button type="button">Back</button>
       </NavLink>
       {filteredCountry.map((country) => (
-        <section key={country.name.official}>
-          <img src={country.flags.png} alt={`Flag of ${country.name.official}`} />
+        <section key={country.name.official} className="country-detail-section">
+          <img className="for-mobile" src={country.flags.png} alt={`Flag of ${country.name.official}`} />
+          <img className="svg-flag for-desk" src={country.flags.svg} alt={`Flag of ${country.name.official}`} />
           <div>
             <h1>{country.name.official}</h1>
             <section>
