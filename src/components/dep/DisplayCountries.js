@@ -35,7 +35,7 @@ function DisplayCountries() {
       <section className="inputs-container">
         <div className="country-input-container">
           <img className="magnifier-img" src={magnifier} alt="magnifier" />
-          <input type="text" className="search-input" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
+          <output type="text" className="search-input" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
         </div>
         <input placeholder="Find by Region.." onChange={(e) => setFilterRegion(e.target.value)} className="select-pop" />
       </section>
