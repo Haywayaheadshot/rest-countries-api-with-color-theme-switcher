@@ -61,6 +61,11 @@
 
 .search-input {
   border: none;
+  width: 80%;
+}
+
+.night .search-input {
+  background-color: hsl(207, 26%, 17%);
 }
 
 .displayed-countries {
