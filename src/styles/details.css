@@ -3,6 +3,37 @@
   color: hsl(0, 0%, 52%);
 }
 
+.details-container {
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  margin-top: 30px;
+} 
+
+.back-arrow {
+  width: 20px;
+}
+
+.back-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  padding: 5px 20px;
+}
+
+.night .back-btn {
+  box-shadow: 3px 3px 0 2px #000;
+  background: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 98%);
+}
+
+.night .back-btn:hover {
+  box-shadow: 3px 3px 0 2px #000;
+  background: hsl(0, 0%, 52%);
+  color: hsl(207, 26%, 17%);
+}
+
 @media (min-width: 745px) {
   .details-container {
     display: grid;
