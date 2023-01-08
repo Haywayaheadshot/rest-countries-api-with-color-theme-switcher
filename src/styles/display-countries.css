@@ -46,7 +46,6 @@
   color: hsl(0, 0%, 98%);
 }
 
-
 .select-pop {
   height: 50px;
   width: 50%;
@@ -98,7 +97,7 @@
 }
 
 .select-pop::placeholder {
-  color: hsl(200, 15%, 8%)
+  color: hsl(200, 15%, 8%);
 }
 
 .displayed-countries {
