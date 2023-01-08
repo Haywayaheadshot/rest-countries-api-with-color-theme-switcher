@@ -14,6 +14,10 @@
   border: 1px solid hsl(0, 0%, 98%);
 }
 
+.night .countries-section {
+  background-color: hsl(207, 26%, 17%);
+}
+
 .country-flag-png {
   width: inherit;
   margin: 0;
@@ -31,21 +35,41 @@
   color: hsl(0, 0%, 52%);
 }
 
+.section-mobile-info h1,
+.section-mobile-info h4 {
+  color: hsl(200, 15%, 8%);
+}
+
+.night .section-mobile-info h1,
+.night .section-mobile-info h4,
+.night .section-mobile-info-data {
+  color: hsl(0, 0%, 98%);
+}
+
+
 .select-pop {
   height: 50px;
   width: 50%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 52%);
+  padding-left: 30px;
 }
 
-.inputs-container {
+.night .select-pop {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 98%);
+}
+
+/* .inputs-container {
   display: grid;
   gap: 40px;
-}
+} */
 
 .country-input-container {
   display: flex;
   flex-direction: row;
-
-  /* justify-content: space-between; */
+  margin-bottom: 40px;
   align-items: center;
   border: 1px solid hsl(0, 0%, 52%);
   padding: 2px 15px;
@@ -66,12 +90,38 @@
 
 .night .search-input {
   background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 98%);
+}
+
+.night .search-input::placeholder {
+  color: hsl(0, 0%, 98%);
+}
+
+.select-pop::placeholder {
+  color: hsl(200, 15%, 8%)
 }
 
 .displayed-countries {
   display: grid;
   place-content: center;
   gap: 40px;
+}
+
+.regions-pop-ul {
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 52%);
+  padding: 10px 0 5px 30px;
+  width: 36%;
+  position: absolute;
+}
+
+.night .regions-pop-ul {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 98%);
+}
+
+.regions-pop-ul-li:hover {
+  background-color: beige;
 }
 
 @media (min-width: 745px) {
