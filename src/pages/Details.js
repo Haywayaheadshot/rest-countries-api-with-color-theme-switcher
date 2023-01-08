@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 import '../styles/details.css';
+import backArrow from '../assets/icons/left-arrow.png';
 
 function Details() {
   const params = useParams();
@@ -11,7 +12,10 @@ function Details() {
   return (
     <div className="details-container">
       <NavLink to="/">
-        <button type="button">Back</button>
+        <button className="back-btn" type="button">
+          <img className="back-arrow" src={backArrow} alt="Back" />
+          Back
+        </button>
       </NavLink>
       {filteredCountry.map((country) => (
         <section key={country.name.official} className="country-detail-section">
