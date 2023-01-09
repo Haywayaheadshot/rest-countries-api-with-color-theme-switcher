@@ -3,8 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  /* width: 100vw; */
+  padding: 0 3vw 0 5vw;
   border-bottom: 1px solid hsl(0, 0%, 98%);
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 3px 0 hsl(0, 0%, 52%);
@@ -17,6 +16,7 @@
 .nav-bar-container h3 {
   font-size: 16px;
   padding: 3vh 4vw;
+  cursor: none;
 }
 
 .night .nav-bar-container h3 {
@@ -25,6 +25,6 @@
 
 @media (min-width: 745px) {
   .nav-bar-container {
-    padding: 0 10vw;
+    padding: 0 8vw 0 4vw;
   }
 }
