@@ -38,19 +38,12 @@ function Details() {
     const currenciesVal = Object.values(filteredCountry[0].currencies);
     for (let i = 0; i < currenciesVal.length; i += 1) {
       currenciesArr.push(currenciesVal[i]);
-      // console.log(currenciesVal[i]);
     }
-    // console.log(currenciesVal);
   };
 
   if (filteredCountry[0].currencies) {
     handleCurrencies();
   }
-
-  // console.log(Object.values(filteredCountry[0].languages))
-  // const { languages } = Object.values(filteredCountry[0].languages)
-  // console.log(`${currenciesArr} from details`);
-  // console.log(filteredCurrency)
 
   return (
     <div className="details-container">
