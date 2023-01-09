@@ -53,6 +53,12 @@ ul {
   padding: 0;
 }
 
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 @media (min-width: 745px) {
   .for-desk {
     display: block;
