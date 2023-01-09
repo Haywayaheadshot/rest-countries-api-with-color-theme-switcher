@@ -115,13 +115,6 @@
     border: 1px solid #000;
   }
 
-  /* .country-detail-info-container {
-    display: grid;
-    flex-direction: column;
-    padding: 40px; 
-    grid-template-columns: 1fr 1fr;
-  } */
-
   .detail-info-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,7 +122,6 @@
   }
 
   .detail-info-section:nth-child(3) {
-    
     width: 100%;
   }
 
