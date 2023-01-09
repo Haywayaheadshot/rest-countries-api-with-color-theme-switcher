@@ -1,5 +1,6 @@
 .half-moon-img {
   width: 20px;
+  cursor: pointer;
 }
 
 .half-moon-btn {
@@ -10,8 +11,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
 
-  /* height: fit-content; */
+.half-moon-btn h2 {
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .dark-mode-container {
