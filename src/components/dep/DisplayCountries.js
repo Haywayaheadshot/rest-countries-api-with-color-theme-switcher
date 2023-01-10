@@ -50,19 +50,19 @@ function DisplayCountries() {
           {closeRegions && (
           <ul className="regions-pop-ul">
             <li className="regions-pop-ul-li">
-              <option onClick={handleOptions} value="Africa font">Africa</option>
+              <option onClick={handleOptions} className="font" value="Africa">Africa</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="America font">America</option>
+              <option onClick={handleOptions} className="font" value="America">America</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="Asia font">Asia</option>
+              <option onClick={handleOptions} className="font" value="Asia">Asia</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="Europe">Europe</option>
+              <option onClick={handleOptions} className="font" value="Europe">Europe</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="Oceania font">Oceania</option>
+              <option onClick={handleOptions} className="font" value="Oceania">Oceania</option>
             </li>
           </ul>
           )}
