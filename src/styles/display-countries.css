@@ -71,11 +71,6 @@
   color: hsl(0, 0%, 98%);
 }
 
-/* .inputs-container {
-  display: grid;
-  gap: 40px;
-} */
-
 .country-input-container {
   display: flex;
   flex-direction: row;
@@ -163,8 +158,8 @@
   }
 
   .countries-section {
-    /* max-width: 10%; */
     max-width: 16vw;
+    height: 100%;
   }
 
   .country-flag-png {
