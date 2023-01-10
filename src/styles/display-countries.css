@@ -120,6 +120,7 @@
   width: 36%;
   position: absolute;
   cursor: pointer;
+  height: 120px;
 }
 
 .night .regions-pop-ul {
@@ -168,6 +169,7 @@
 
   .regions-pop-ul {
     width: 12.5%;
+    height: 120px;
   }
 
   .display-countries-container {
