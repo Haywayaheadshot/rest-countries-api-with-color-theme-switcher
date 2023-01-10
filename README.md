@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
     - [ScreenShots](#screenshot)
+  - [🚀 Live Video](#live-video)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -47,7 +48,13 @@ Users should be able to:
 - **GitFlow**
 - **Github**
 
-<!-- LIVE DEMO -->
+<!-- LIVE VIDEO -->
+
+## 🚀 Video <a name="live-video"></a>
+
+![Live Video](/src/assets/video/Countries%20Info.mp4);
+
+<!-- SCREEN SHOT -->
 
 ## Screen Shots <a name="screenshot"></a>
 
