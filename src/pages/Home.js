@@ -1,6 +1,5 @@
 import React from 'react';
 import DisplayCountries from '../components/dep/DisplayCountries';
-import '../styles/home.css';
 
 function Home() {
   return (

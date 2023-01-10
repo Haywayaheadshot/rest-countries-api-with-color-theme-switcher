@@ -82,6 +82,9 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  max-width: 55vw;
 }
 
 .border-on-i {
@@ -90,10 +93,12 @@
   color: hsl(207, 26%, 17%);
   font-weight: 300;
   box-shadow: 0 0 2px #000;
+  scroll-snap-align: start;
 }
 
 .night .border-on-i {
   color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 4px #fff;
 }
 
 @media (min-width: 745px) {
@@ -135,5 +140,16 @@
 
   .back-btn {
     margin-left: 8vw;
+  }
+
+  .border-on-i-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    max-width: 30vw;
+  }
+
+  .border-on-i {
+    scroll-snap-align: start;
+    cursor: all-scroll;
   }
 }

@@ -34,28 +34,25 @@ function Details() {
 
   // Handle Currencies
   const currenciesArr = [];
+
   const handleCurrencies = () => {
     const currenciesVal = Object.values(filteredCountry[0].currencies);
     for (let i = 0; i < currenciesVal.length; i += 1) {
       currenciesArr.push(currenciesVal[i]);
-      // console.log(currenciesVal[i]);
     }
-    // console.log(currenciesVal);
   };
 
   if (filteredCountry[0].currencies) {
     handleCurrencies();
   }
 
-  // console.log(Object.values(filteredCountry[0].languages))
-  // const { languages } = Object.values(filteredCountry[0].languages)
-  // console.log(`${currenciesArr} from details`);
-  // console.log(filteredCurrency)
+  const filteredCurrency = [];
+  filteredCurrency.push(currenciesArr[0]);
 
   return (
     <div className="details-container">
       <NavLink to="/">
-        <button className="back-btn" type="button">
+        <button className="back-btn font" type="button">
           <img className="back-arrow" src={backArrow} alt="Back" />
           Back
         </button>
@@ -70,43 +67,44 @@ function Details() {
             <h1>{country.name.official}</h1>
             <section className="detail-info-section-container">
               <div className="detail-info-section">
-                <h4>
+                <h4 className="font">
                   Native Name:
-                  <span className="details-mobile-info-data">{country.name.common}</span>
+                  <span className="details-mobile-info-data font">{country.name.common}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Population:
-                  <span className="details-mobile-info-data">{country.population}</span>
+                  <span className="details-mobile-info-data font">{country.population}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Region:
-                  <span className="details-mobile-info-data">{country.region}</span>
+                  <span className="details-mobile-info-data font">{country.region}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Sub Region:
-                  <span className="details-mobile-info-data">{country.subregion}</span>
+                  <span className="details-mobile-info-data font">{country.subregion}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Capital:
-                  <span className="details-mobile-info-data">{country.capital}</span>
+                  <span className="details-mobile-info-data font">{country.capital}</span>
                 </h4>
               </div>
               <div className="detail-info-section">
-                <h4>
+                <h4 className="font">
                   Top Level Domain:
-                  <span className="details-mobile-info-data">{country.tld}</span>
+                  <span className="details-mobile-info-data font">{country.tld}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Currencies:
-                  {/* {filteredCurrency.map((currency) => (
-                    <span key={currency.name} className="details-mobile-info-data">{currency.name}
+                  {filteredCurrency.map((currency) => (
+                    <span key={currency.symbol} className="details-mobile-info-data font">
+                      {currency.name}
                     </span>
-                  ))} */}
+                  ))}
                 </h4>
                 <h4>
                   Languages:
                   {languagesArr.map((language) => (
-                    <span key={language} className="details-mobile-info-data">
+                    <span key={language} className="details-mobile-info-data font">
                       {language}
                       ,
                     </span>
@@ -117,9 +115,9 @@ function Details() {
             <section className="border-container">
               { country.borders ? (
                 <>
-                  <h4>Border Countries:</h4>
+                  <h4 className="font">Border Countries:</h4>
                   <h4 className="border-on-i-container">
-                    {bordersArr.map((border) => <div className="border-on-i" key={border}>{border}</div>)}
+                    {bordersArr.map((border) => <div className="border-on-i font" key={border}>{border}</div>)}
                   </h4>
                 </>
               ) : null }
