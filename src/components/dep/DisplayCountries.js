@@ -43,26 +43,26 @@ function DisplayCountries() {
       <section className="inputs-container">
         <div className="country-input-container">
           <img className="magnifier-img" src={magnifier} alt="magnifier" />
-          <input type="text" className="search-input" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
+          <input type="text" className="search-input font" placeholder="Search for a country ..." onChange={(e) => setSearch(e.target.value)} />
         </div>
         <div>
           <input value={value} onClick={() => openRegions((region) => !region)} onChange={(e) => setFilterRegion(e.target.value)} className="select-pop" readOnly />
           {closeRegions && (
           <ul className="regions-pop-ul">
             <li className="regions-pop-ul-li">
-              <option onClick={handleOptions} value="Africa">Africa</option>
+              <option onClick={handleOptions} value="Africa font">Africa</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="America">America</option>
+              <option onClick={handleOptions} value="America font">America</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="Asia">Asia</option>
+              <option onClick={handleOptions} value="Asia font">Asia</option>
             </li>
             <li>
               <option onClick={handleOptions} value="Europe">Europe</option>
             </li>
             <li>
-              <option onClick={handleOptions} value="Oceania">Oceania</option>
+              <option onClick={handleOptions} value="Oceania font">Oceania</option>
             </li>
           </ul>
           )}
@@ -75,17 +75,17 @@ function DisplayCountries() {
               <img className="country-flag-png" src={country.flags.png} alt={`Flag of ${country.name.official}`} />
               <div className="section-mobile-info">
                 <h1>{country.name.official}</h1>
-                <h4>
+                <h4 className="font">
                   Population:
-                  <span className="section-mobile-info-data">{country.population}</span>
+                  <span className="section-mobile-info-data font">{country.population}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Region:
-                  <span className="section-mobile-info-data">{country.region}</span>
+                  <span className="section-mobile-info-data font">{country.region}</span>
                 </h4>
-                <h4>
+                <h4 className="font">
                   Capital:
-                  <span className="section-mobile-info-data">{country.capital}</span>
+                  <span className="section-mobile-info-data font">{country.capital}</span>
                 </h4>
               </div>
             </section>
